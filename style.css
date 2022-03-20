@@ -55,7 +55,8 @@ header {
   grid-template-columns: 50% 50%;
 }
 .header-left {
-  margin: auto 50px;
+  margin: auto 0;
+  padding: 50px;
 }
 .header-right {
   background: url(./Assets/img/banner.jpg) right/cover;
@@ -164,4 +165,37 @@ footer a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+/*****************  MEDIAS QUERIES  **************/
+@media screen and (max-width: 650px){
+  header, 
+  .part-1, 
+  .part-2 {
+    display: block;
+    min-height: 0;
+  }
+  header {
+    height: auto;
+  }
+  header .header-right-container {
+    height: 50vh;
+    margin-top: 30px;
+  }
+  .header-left,
+  .part-1-right,
+  .part-2-left {
+    padding: 30px 15px;
+    margin: auto;
+    height: auto;
+  }
+  footer ul {
+    min-width: 200px;
+  }
+  footer a {
+    width: 30px;
+    height: 30px;
+  }
+  footer i {
+    font-size: 0.75rem;
+  }
 }
